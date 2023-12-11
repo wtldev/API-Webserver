@@ -8,7 +8,8 @@ const openai = new OpenAI();
 
 http.createServer(async function (req, res) {
 	
-  console.log(bearer);	
+  console.log("process env:");	
+  console.log(process.env);	
  
   var newText = await OpenAiGenerateText(20,'Geschichte');
 
