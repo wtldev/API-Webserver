@@ -1,9 +1,10 @@
 var http = require('http');
+var fetch = require('node-fetch');
 
 //require('dotenv').config();
 const bearer = process.env.BEARER_SECRET;
 const OpenAI = require('openai');
-const openai = new OpenAI();
+//const openai = new OpenAI();
 
 
 http.createServer(async function (req, res) {
