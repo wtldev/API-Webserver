@@ -7,6 +7,8 @@ const openai = new OpenAI();
 
 
 http.createServer(async function (req, res) {
+	
+  console.log(bearer);	
  
   var newText = await OpenAiGenerateText(20,'Geschichte');
 
