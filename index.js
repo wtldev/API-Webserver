@@ -37,6 +37,7 @@ async function  OpenAiGenerateText(wordCount, topic) {
 
     });
     result = await response.json();
+    console.log(result);
     //document.getElementById("text").value = await res['choices'][0].text;
     var textWithoutMistakes= await result['choices'][0].text;
     //JSON.stringify(textWithoutMistakes)
