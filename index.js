@@ -1,6 +1,6 @@
 var http = require('http');
 
-require('dotenv').config();
+//require('dotenv').config();
 const bearer = process.env.BEARER_SECRET;
 const OpenAI = require('openai');
 const openai = new OpenAI();
