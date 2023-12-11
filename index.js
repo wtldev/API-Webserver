@@ -17,8 +17,6 @@ http.createServer(async function (req, res) {
 }).listen(3000); 
 
 
-
-
 async function  OpenAiGenerateText(wordCount, topic) {
     var url = "https://api.openai.com/v1/completions";
     response = await fetch(url, {
